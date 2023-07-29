@@ -19,7 +19,12 @@ const App = () => {
 					<div>
 						<Heading as='h2'>Check in and out</Heading>
 						<Button onClick={() => alert('Check in')}>Check in</Button>
-						<Button onClick={() => alert('Check out')}>Check out</Button>
+						<Button
+							variation='danger'
+							size='medium'
+							onClick={() => alert('Check out')}>
+							Check out
+						</Button>
 					</div>
 				</Row>
 
@@ -28,7 +33,11 @@ const App = () => {
 					<form>
 						<Input type='number' placeholder='Number of Guests' />
 						<Input type='number' placeholder='Number of days' />
-						<Button type='submit' onClick={() => alert('Submit')}>
+						<Button
+							variation='secondary'
+							size='small'
+							type='submit'
+							onClick={() => alert('Submit')}>
 							Submit
 						</Button>
 					</form>
